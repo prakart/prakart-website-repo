@@ -203,5 +203,19 @@ export const terms: CardListData = {
   ]
 }
 
+// src/site.config.ts
+export const siteConfig = {
+  // ... existing config
+  content: {
+    // Add required content sub-properties here
+  },
+  npmCDN: 'https://cdn.jsdelivr.net/npm/', // Example value
+  footer: {
+    // Add required footer sub-properties here
+  },
+  author: 'Prakart',
+  // Ensure all other requested properties are present
+};
+
 const config = { ...theme, integ } as Config
 export default config
