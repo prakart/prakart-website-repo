@@ -205,16 +205,14 @@ export const terms: CardListData = {
 
 // src/site.config.ts
 export const siteConfig = {
-  // ... existing config
+  // ... your existing settings
   content: {
-    // Add required content sub-properties here
+    // Check documentation for mandatory sub-fields
+    blog: { /* example field */ },
   },
-  npmCDN: 'https://cdn.jsdelivr.net/npm/', // Example value
-  footer: {
-    // Add required footer sub-properties here
-  },
-  author: 'Prakart',
-  // Ensure all other requested properties are present
+  npmCDN: 'https://cdn.jsdelivr.net/npm/',
+  locale: 'en-US', // Or your preferred locale
+  // Add any other properties the compiler highlighted
 };
 
 const config = { ...theme, integ } as Config
