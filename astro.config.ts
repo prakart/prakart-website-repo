@@ -1,7 +1,7 @@
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
 import vercel from '@astrojs/vercel'
 import AstroPureIntegration from 'astro-pure'
-import { defineConfig, fontProviders } from 'astro/config'
+import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
 
@@ -43,7 +43,7 @@ export default defineConfig({
 
   // [Assets]
   image: {
-    responsiveStyles: true,
+    //responsiveStyles: true,
     service: { entrypoint: 'astro/assets/services/sharp' },
     remotePatterns: [
       // Allow improve Github activity chart
@@ -109,29 +109,29 @@ export default defineConfig({
   ],
 
   // [Experimental]
-  experimental: {
+  //experimental: {
     // Allow compatible editors to support intellisense features for content collection entries
     // https://docs.astro.build/en/reference/experimental-flags/content-intellisense/
-    contentIntellisense: true,
+    //contentIntellisense: true,
     // Enable SVGO optimization for SVG assets
     // https://docs.astro.build/en/reference/experimental-flags/svg-optimization/
-    svgo: true,
+    //svgo: true,
     // Enable font preloading and optimization
     // https://docs.astro.build/en/reference/experimental-flags/fonts/
-    fonts: [
-      {
-        provider: fontProviders.fontshare(),
-        name: 'Satoshi',
-        cssVariable: '--font-satoshi',
+    //fonts: [
+      //{
+        //provider: fontProviders.fontshare(),
+      //  name: 'Satoshi',
+        //cssVariable: '--font-satoshi',
         // Default included:
         // weights: [400],
         // styles: ["normal", "italics"],
         // subsets: ["cyrillic-ext", "cyrillic", "greek-ext", "greek", "vietnamese", "latin-ext", "latin"],
         // fallbacks: ["sans-serif"],
-        styles: ['normal', 'italic'],
-        weights: [400, 500],
-        subsets: ['latin']
-      }
-    ]
-  }
+        //styles: ['normal', 'italic'],
+       // weights: [400, 500],
+     //   subsets: ['latin']
+      //}
+   // ]
+ // }
 })

@@ -1,8 +1,9 @@
 ---
-import { Font } from 'astro:assets'
+//import { Font } from 'astro:assets'
 
 import { prod } from 'astro-pure/server'
 import type { SiteMeta } from 'astro-pure/types'
+import { LINKS_PLACEHOLDER } from 'node_modules/astro/dist/content/consts'
 import config from 'virtual:config'
 
 type Props = SiteMeta
@@ -28,7 +29,12 @@ const socialImageURL = new URL(ogImage ? ogImage : config.socialCard, Astro.url)
 <link rel='manifest' href='/favicon/site.webmanifest' />
 
 {/* Font preloads */}
-<Font cssVariable='--font-satoshi' preload={[{ subset: 'latin', style: 'normal' }]} />
+<link rel="preload" href="/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<style is:global>
+  :root {
+    --font-satoshi: 'Satoshi', sans-serif;
+  }
+</style>
 <style>
   body {
     font-family: var(--font-satoshi);
