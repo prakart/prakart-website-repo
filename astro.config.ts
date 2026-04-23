@@ -1,5 +1,5 @@
 import { rehypeHeadingIds } from '@astrojs/markdown-remark'
-import vercel from '@astrojs/vercel'
+
 import AstroPureIntegration from 'astro-pure'
 import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
@@ -22,6 +22,8 @@ import {
 } from './src/plugins/shiki-official/transformers.ts'
 import config from './src/site.config.ts'
 
+import react from '@astrojs/react';
+
 // https://astro.build/config
 export default defineConfig({
   // [Basic]
@@ -35,8 +37,9 @@ export default defineConfig({
 
   // [Adapter]
   // https://docs.astro.build/en/guides/deploy/
-  adapter: vercel({ imageService: true }),
-  output: 'server',
+  
+  //output: 'server',
+  output: 'static',
   // Local (standalone)
   // adapter: node({ mode: 'standalone' }),
   // output: 'server',
@@ -101,12 +104,10 @@ export default defineConfig({
   },
 
   // [Integrations]
-  integrations: [
-    // astro-pure will automatically add sitemap, mdx & unocss
-    // sitemap(),
-    // mdx(),
-    AstroPureIntegration(config)
-  ],
+  integrations: [// astro-pure will automatically add sitemap, mdx & unocss
+  // sitemap(),
+  // mdx(),
+  AstroPureIntegration(config), react()],
 
   // [Experimental]
   //experimental: {
