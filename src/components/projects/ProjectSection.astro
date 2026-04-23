@@ -35,7 +35,7 @@ const projectIconSet: Record<string, iconsType> = {
 <div class={className} {...props}>
   <div class='grid grid-cols-1 gap-x-4 gap-y-3 sm:grid-cols-2 sm:gap-y-4'>
     {
-      projects.map((project) => {
+      {/*projects.map((project) => {
         var imagePath = null
         if (project.image) {
           imagePath = '/src/assets/projects/' + project.image
@@ -44,7 +44,20 @@ const projectIconSet: Record<string, iconsType> = {
               `"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif,avif,webp}"`
             )
         }
+        */}
+      {projects.map((project) => {
+        // Add this guard clause to skip empty projects
+        if (!project) return null; 
 
+        var imagePath = null
+        if (project.image) {
+          imagePath = '/src/assets/projects/' + project.image
+          if (!images[imagePath])
+            throw new Error(
+              `"${imagePath}" does not exist in glob: "src/assets/projects/*.{jpeg,jpg,png,gif,avif,webp}"`
+            )
+        }
+  // ... rest of your code
         return (
           <div class='relative overflow-hidden rounded-xl border'>
             {imagePath && (
@@ -68,7 +81,7 @@ const projectIconSet: Record<string, iconsType> = {
             >
               <a
                 class='line-clamp-1 font-medium text-foreground no-underline transition-colors'
-                href={project.links[0].href}
+                href={project.links[0]?.href || '#'}
                 target='_blank'
               >
                 {project.name}
@@ -81,7 +94,7 @@ const projectIconSet: Record<string, iconsType> = {
                   const icon = projectIconSet[link.type]
                   return (
                     <a
-                      href={link.href}
+                      href={link.href || '#'}
                       class='rounded-full bg-muted p-1 text-muted-foreground transition-colors sm:p-1.5'
                       aria-label={link.type}
                       target='_blank'
