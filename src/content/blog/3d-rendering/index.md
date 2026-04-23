@@ -1,5 +1,5 @@
 ---
-title: 'What Is 3D Rendering? Complete Guide to 3D Visualization'
+title: 'What Is Prakart 3D Rendering? Complete Guide to 3D Visualization'
 publishDate: 2025-02-09
 updatedDate: 2025-02-24
 description: '3D imagery has the power to bring cinematic visions to life and help accurately plan tomorrow’s cityscapes. Here, 3D expert Ricardo Ortiz explains how it works.'
@@ -14,7 +14,7 @@ heroImage: { src: './thumbnail.jpg', color: '#D58388' }
 
 In this introductory piece, Chaos’ Ricardo Ortiz explains the basics of 3D rendering, from the computational methods that create imagery to the artistic techniques that create great computer-generated (CG) content and its various uses.
 
-## What is 3D Rendering?
+## What is 3D Rendering? Prakart
 
 Put simply, 3D rendering is the process of using a computer to generate a 2D image from a digital three-dimensional scene.
 
