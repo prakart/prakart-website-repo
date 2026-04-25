@@ -3,11 +3,11 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // [Basic]
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
+  title: 'Prakart\'s Blog',
   /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
+  author: 'Prakart Lertsettawanich',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
+  description: 'This blog is my personal knowledge lab — a place where ideas evolve, experiments happen, and insights are shared.',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** The default social card image for your site which should be a path to an image in the `public/` directory. */
@@ -26,7 +26,7 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: '/src/assets/avatar.png',
+    src: '/src/assets/avatar.jpeg',
     alt: 'Avatar'
   },
 
@@ -49,9 +49,9 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
+     // { title: 'Docs', link: '/docs' },
       { title: 'Projects', link: '/projects' },
-      { title: 'Links', link: '/links' },
+      { title: 'Learn', link: '/links' },
       { title: 'About', link: '/about' }
     ]
   },
@@ -64,7 +64,7 @@ export const theme: ThemeUserConfig = {
     links: [
       // Registration link
       {
-        title: 'Moe ICP 114514',
+        title: 'Prakart L.',
         link: 'https://icp.gov.moe/?keyword=114514',
         style: 'text-sm' // Uno/TW CSS class
       },
@@ -78,7 +78,7 @@ export const theme: ThemeUserConfig = {
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    social: { github: 'https://github.com/prakart' }
   },
 
   // [Content]
@@ -105,11 +105,11 @@ export const integ: IntegrationUserConfig = {
   links: {
     // Friend logbook
     logbook: [
-      { date: '2025-03-16', content: 'Is there a leakage?' },
-      { date: '2025-03-16', content: 'A leakage of what?' },
-      { date: '2025-03-16', content: 'I have a full seat of water, like, full of water!' },
-      { date: '2025-03-16', content: 'Must be the water.' },
-      { date: '2025-03-16', content: "Let's add that to the words of wisdom." }
+      { date: '2026-04-25', content: 'Paperclip AI + ClaudeCode? , http://tiny.cc/fcd2101' },
+      { date: '2026-04-25', content: 'A leakage of what?' },
+      { date: '2026-04-25', content: 'I have a full seat of water, like, full of water!' },
+      { date: '2026-04-25', content: 'Must be the water.' },
+      { date: '2026-04-25', content: "Let's add that to the words of wisdom." }
     ],
     // Yourself link info
     applyTip: [
@@ -206,6 +206,7 @@ export const terms: CardListData = {
 // src/site.config.ts
 export const siteConfig = {
   // ... your existing settings
+  
   content: {
     // Check documentation for mandatory sub-fields
     blog: { /* example field */ },
@@ -213,7 +214,9 @@ export const siteConfig = {
   npmCDN: 'https://cdn.jsdelivr.net/npm/',
   locale: 'en-US', // Or your preferred locale
   // Add any other properties the compiler highlighted
+  //title: 'Prakart Blog and Projects',
 };
+
 
 const config = { ...theme, integ } as Config
 export default config
