@@ -105,11 +105,12 @@ export const integ: IntegrationUserConfig = {
   links: {
     // Friend logbook
     logbook: [
+      { date: '2026-04-29', content: 'ThClaws - Frok , prakart/thClaws'},
+      { date: '2026-04-29', content: 'Claude Routines x LINE, EnabridgeAIwithYoh' },
+      { date: '2026-04-29', content: 'Claude Code, GLM (Z.ai), Next.js, Skills-BetterAuthen, MeLiveCode' },
+      { date: '2026-04-28', content: 'AWS Compute Service Management, Coursera & Packt'},
       { date: '2026-04-25', content: 'Paperclip AI + ClaudeCode? , http://tiny.cc/fcd2101' },
-      { date: '2026-04-25', content: 'A leakage of what?' },
-      { date: '2026-04-25', content: 'I have a full seat of water, like, full of water!' },
-      { date: '2026-04-25', content: 'Must be the water.' },
-      { date: '2026-04-25', content: "Let's add that to the words of wisdom." }
+      { date: '2026-04-25', content: 'Claude Code 2.0, https://tinyurl.com/3texfnxz ' }
     ],
     // Yourself link info
     applyTip: [
@@ -160,7 +161,7 @@ export const integ: IntegrationUserConfig = {
   },
   // Comment system
   waline: {
-    enable: true,
+    enable: false,
     // Server service link
     server: 'https://astro-theme-pure-waline.arthals.ink/',
     // Show meta info for comments
