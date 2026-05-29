@@ -40,6 +40,13 @@ html.dark {
 }
 
 /* Global */
+body {
+  background-image: url('/wavy_lines_abstract_rainbow_background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 a {
   transition: color 0.2s ease;
   &:hover {
