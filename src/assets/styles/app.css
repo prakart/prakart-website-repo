@@ -40,6 +40,24 @@ html.dark {
 }
 
 /* Global */
+body {
+  background-image: url('/wave-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#main-container {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.dark #main-container {
+  background: rgba(10, 12, 28, 0.82);
+}
+
 a {
   transition: color 0.2s ease;
   &:hover {
