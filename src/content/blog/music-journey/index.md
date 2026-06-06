@@ -1,30 +1,35 @@
 ---
-title: The Impact of Technology on the Music World
-publishDate: 2024-11-30
-description: 'The evolution of music is a symphony of creativity, rhythm, and technology.'
+title: PERT Three-Pont Estimating
+publishDate: 2026-06-06
+description: 'Testimating the duration of a project or task, PERT stands for Program Evaluation and Review Technique.'
 tags:
-  - Example
-  - Music
-  - Technology
+  - Project Management
+  - PMP
+  - PERT
 heroImage: { src: './thumbnail.jpg', color: '#4891B2' }
 language: 'English'
 ---
 
-The evolution of music is a symphony of creativity, rhythm, and technology. From the humble beginnings of acoustic instruments to the present-day digital era, the relationship between music and technology has been transformative. In this article, we will explore the historical milestones, digital revolution, and emerging technologies that have shaped the music world. Join us on a journey through the chords of innovation as we discuss how technology has changed music.
+## Project Management: PERT Three-Point Estimating
 
-## Historical Perspective
+If you are estimating the duration of a project or task, **PERT** stands for **Program Evaluation and Review Technique**. It calculates a weighted average of three time estimates to account for real-world uncertainty.
 
-The marriage of music and technology dates back centuries, with pivotal moments shaping the industry. The invention of the phonograph by Thomas Edison in the late 19th century marked the first time music could be recorded and replayed. Subsequent milestones, such as the electric guitar and the synthesizer, revolutionized music creation, paving the way for new genres and sounds.
+### The formula is:
 
-These technological leaps didn't merely shape the musical landscape of their time but laid a foundation for the continuous evolution of the intersection between music and technology. As artists embraced these innovations, they unlocked new avenues for creativity, paving the way for diverse sounds and genres that have become integral to the vibrant tapestry of the modern music industry. The historical perspective illuminates the symbiotic relationship between music and technology, highlighting the transformative impact that each innovation has had on the way we create, consume, and experience music.
+$$E = \frac{O + 4M + P}{6}$$
 
-## Digital Revolution
+- **O (Optimistic):** The best-case scenario if everything goes perfectly.
+- **M (Most Likely):** The expected duration under normal, everyday conditions.
+- **P (Pessimistic):** The worst-case scenario if everything goes wrong.
 
-The digital revolution has been a seismic shift in the music industry, altering how music is consumed, distributed, and produced. The transition from physical formats like CDs and vinyl to digital formats such as MP3s and streaming services has democratized access to music. The ease of streaming has transformed how listeners discover and enjoy music, challenging traditional revenue models while offering unparalleled convenience.
+### Example
 
-## Technology in Music Consumption and Distribution
+If it takes your team:
 
-Streaming services have become the heartbeat of music consumption, causing a decline in traditional music stores. The accessibility of music online has reshaped distribution channels, impacting both artists and record labels. While it provides exposure to a global audience, it also poses challenges regarding fair compensation for artists. The dynamics of the industry are evolving, reflecting the intricate dance between technology and music.
-Music Production and Creation
+- **3 days** in the best case,
+- **5 days** normally,
+- **13 days** in the worst-case scenario,
 
-The advent of digital audio workstations (DAWs), software instruments, and electronic production techniques has democratized music creation. Artists now have powerful tools at their fingertips, enabling them to experiment with sounds, collaborate remotely, and produce music independently. This technological shift has broken down barriers, allowing for a diverse array of voices to be heard in the ever-expanding realm of music.
+then your PERT estimate is:
+
+$$E = \frac{3 + (4 \times 5) + 13}{6} = \frac{36}{6} = 6\text{ days}$$
