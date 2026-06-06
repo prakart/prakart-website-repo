@@ -41,7 +41,7 @@ html.dark {
 
 /* Global */
 body {
-  background-image: url('/wave-background.jpg');
+  background-image: url('/wave-background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
